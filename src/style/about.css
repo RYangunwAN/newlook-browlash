@@ -1,43 +1,38 @@
 .carousel {
-  width: 100%;
-  overflow: hidden;
+    width: 100%;
 }
 
 .flickity-viewport {
-  width: 100% !important;
+    width: 100% !important;
+    overflow: hidden;
 }
 
 .flickity-slider {
-  display: flex !important;
-  justify-content: center;
-  align-items: end;
+    display: flex !important;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .carousel-cell {
-  flex-shrink: 0;
-  width: 160px;
-  height: 210px;
-  margin: 0 10px;
-  pointer-events: none;
-  opacity: 0.5;
-  transform: scale(0.9); /* Slightly smaller */
-  transition: transform 0.4s ease, opacity 0.4s ease;
-  border-radius: 12px;
-  overflow: hidden;
-  border: 2px solid transparent;
-}
-
-.carousel-cell.is-selected {
-  transform: scale(1.15); /* Larger visually */
-  opacity: 1;
-  border: 3px solid gold;
-  z-index: 2;
+    flex-shrink: 0;
+    width: 200px; /* increased width */
+    height: 260px; /* increased height */
+    margin: 0 12px;
+    pointer-events: none;
+    transform: scale(1); /* base scale */
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    overflow: hidden;
 }
 
 .carousel-cell img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* or "contain" if you prefer */
+    display: block;
+}
+
+.carousel-cell.is-selected {
+    transform: scale(1.4); /* moderate zoom */
+    z-index: 2;
+    opacity: 1;
 }
