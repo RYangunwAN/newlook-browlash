@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'nunito';
+  src: url('../../assets/fonts/Nunito-VariableFont_wght.ttf') format('ttf');
+
+}
+
+@font-face {
+  font-family: 'arizonia';
+  src: url('../../assets/fonts/Arizonia-Regular.ttf') format('ttf');
+
+}
+
+@font-face {
+  font-family: 'baskerville';
+  src: url('../../assets/fonts/baskerville.ttf') format('ttf');
+
+}
