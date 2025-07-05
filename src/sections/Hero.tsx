@@ -13,12 +13,12 @@ const Hero: React.FC = () => {
                 <img
                     src={decorleft}
                     alt="Hero"
-                    className="absolute z-0 left-23 top-50 -translate-x-1/2 w-auto h-[320px]"
+                    className="absolute z-0 left-23 top-40 -translate-x-1/2 w-auto h-[320px]"
                 />
                 <img
                     src={decorright}
                     alt="Hero"
-                    className="absolute z-0 top-30 left-80 -translate-x-1/2 w-auto h-[320px]"
+                    className="absolute z-0 top-20 -right-23 -translate-x-1/2 w-auto h-[320px]"
                 />
                 <img
                     src={decor2left}
@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
                 <img
                     src={decor2right}
                     alt="Hero"
-                    className="absolute z-0 top-137 left-95 -translate-x-1/2 w-auto h-[120px]"
+                    className="absolute z-0 top-137 -right-18 -translate-x-1/2 w-auto h-[120px]"
                 />
                 {/* Row 1: Image */}
                 <div className="relative z-10">

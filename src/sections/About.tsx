@@ -23,11 +23,11 @@ const About: React.FC = () => {
     return (
         <section className="py-8 flex flex-col items-center justify-center bg-[#FAE4E9] pb-20">
             {/* Row 1: Spacer or could be a background/empty row */}
-            <div className="mb-4 w-full ">
+            <div className="mb-4 w-full relative">
                 <img
                     src={shine}
                     alt="shine"
-                    className="absolute z-0 top-195 left-1/2 -translate-x-1/2 w-auto h-[420px]"
+                    className="absolute z-0 -top-15 left-1/2 -translate-x-1/2 w-auto h-[420px]"
                 />
                 <Flickity
                     className="carousel w-full"
