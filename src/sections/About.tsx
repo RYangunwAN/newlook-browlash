@@ -21,7 +21,7 @@ const About: React.FC = () => {
     };
 
     return (
-        <section className="py-8 flex flex-col items-center justify-center bg-[#FAE4E9] pb-20">
+        <section className="py-8 flex flex-col items-center justify-center bg-[#FAE4E9] pb-20 overflow-hidden">
             {/* Row 1: Spacer or could be a background/empty row */}
             <div className="mb-4 w-full relative">
                 <img

@@ -73,7 +73,7 @@ const Service = () => {
                     {services.map((service, index) => (
                         <div
                             key={index}
-                            className="p-[4px] bg-gradient-to-br from-[#9C6F22] via-[#F4D88D] to-[#9C6F22] rounded-xl my-4 shadow-md"
+                            className="p-2 bg-gradient-to-br from-[#9C6F22] via-[#F4D88D] to-[#9C6F22] rounded-xl my-4 shadow-md"
                         >
                             <div className="bg-white rounded-xl max-w-[300px] text-left">
                                 {/* Image */}
