@@ -1,5 +1,4 @@
 @import "../src/style/font.css";
-/* @import '../src/declaration.d.ts'; */
 @import "tailwindcss";
 
 :root {
@@ -48,8 +47,8 @@ h2 {
 
 button {
     font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
+    font-weight:medium;
+    font-family: "nunito";
     cursor: pointer;
 }
 

@@ -8,7 +8,6 @@ import Service from "./sections/Service.tsx";
 import Portfolio from "./sections/Portfolio.tsx";
 import Testimonial from "./sections/Testimonial.tsx";
 import Location from "./sections/Location.tsx";
-import Jadwal from "./sections/Jadwal.tsx";
 import Footer from "./sections/Footer.tsx";
 import CTA from "./sections/CTA.tsx";
 
@@ -21,7 +20,6 @@ createRoot(document.getElementById("root")!).render(
         <Portfolio />
         <Testimonial />
         <Location />
-        <Jadwal />
         <CTA />
         <Footer />
     </StrictMode>

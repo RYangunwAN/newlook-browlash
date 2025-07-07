@@ -2,7 +2,7 @@ import React from "react";
 
 const CTA: React.FC = () => {
     return (
-        <section className="bg-[#1D1D1D] text-white text-center px-6 py-12 space-y-6 max-w-md mx-auto">
+        <section className="bg-[#1D1D1D] text-white text-center px-6 py-12 space-y-6 max-w-md mx-auto" id="hubungi">
             {/* Heading */}
             <h2 className="text-3xl leading-snug">
                 Siap tampil lebih <br /> percaya diri?

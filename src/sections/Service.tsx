@@ -51,7 +51,7 @@ const Service = () => {
     ];
 
     return (
-        <section className="p-4 relative pt-8 overflow-hidden">
+        <section className="p-4 relative pt-8 overflow-hidden md:px-27 md:mb-16" id="layanan">
             <img
                 src={decor1}
                 alt="Hero"
@@ -73,29 +73,33 @@ const Service = () => {
                     {services.map((service, index) => (
                         <div
                             key={index}
-                            className="p-2 bg-gradient-to-br from-[#9C6F22] via-[#F4D88D] to-[#9C6F22] rounded-xl my-4 shadow-md"
                         >
-                            <div className="bg-white rounded-xl max-w-[300px] text-left">
-                                {/* Image */}
-                                <img
-                                    src={service.image}
-                                    alt={service.title}
-                                    className="w-full h-48 object-cover"
-                                />
-                                {/* Content */}
-                                <div className="p-4">
-                                    <h3 className="text-lg font-semibold text-black">
-                                        {service.title}
-                                    </h3>
-                                    <p className="text-sm text-gray-700">
-                                        {service.description}
-                                    </p>
-                                    {/* Book Button */}
-                                    <button className="mt-2 bg-black text-white text-sm font-medium px-4 py-2 rounded-lg border border-transparent hover:border-[#9C6F22] hover:bg-[#1a1a1a] transition">
-                                        Book
-                                    </button>
+                            <div className="p-2 md:p-1 bg-gradient-to-br from-[#9C6F22] via-[#F4D88D] to-[#9C6F22] rounded-xl my-4 shadow-md">
+                                <div className="bg-white rounded-xl max-w-[300px] text-left">
+                                    {/* Image */}
+                                    <img
+                                        src={service.image}
+                                        alt={service.title}
+                                        className="w-full h-48 object-cover rounded-lg"
+                                    />
+                                    {/* Content */}
+                                    <div className="p-4">
+                                        <h3 className="text-lg font-semibold text-black">
+                                            {service.title}
+                                        </h3>
+                                        <p className="text-sm text-gray-700">
+                                            {service.description}
+                                        </p>
+                                        {/* Book Button */}
+                                        <button className="md:hidden mt-2 bg-black text-white text-sm font-medium px-4 py-2 rounded-lg border border-transparent hover:border-[#9C6F22] hover:bg-[#1a1a1a] transition">
+                                            Book
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
+                            <button className="hidden md:block w-full px-5 py-2 rounded-lg bg-black text-white hover:bg-gradient-to-br from-[#9C6F22] via-[#F4D88D] to-[#9C6F22] hover:text-black transition">
+                                Book
+                            </button>
                         </div>
                     ))}
                 </div>

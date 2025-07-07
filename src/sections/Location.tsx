@@ -10,21 +10,21 @@ const Location: React.FC = () => {
     };
 
     const locationDetails: Record<string, { title: string; address: string }> =
-        {
-            newlook: {
-                title: "Kemayoran",
-                address:
-                    "Jl. Sumur Batu Raya No.20, RT.3/RW.1, Sumur Batu, Kec. Kemayoran, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10640",
-            },
-            branch: {
-                title: "Sedayu City",
-                address:
-                    "Ruko sedayu city boulevard selatan blok C no 18, Daerah Khusus Ibukota Jakarta 13920",
-            },
-        };
+    {
+        newlook: {
+            title: "Kemayoran",
+            address:
+                "Jl. Sumur Batu Raya No.20, RT.3/RW.1, Sumur Batu, Kec. Kemayoran, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10640",
+        },
+        branch: {
+            title: "Sedayu City",
+            address:
+                "Ruko sedayu city boulevard selatan blok C no 18, Daerah Khusus Ibukota Jakarta 13920",
+        },
+    };
 
     return (
-        <section className="p-4 space-y-4 max-w-md bg-white pt-16 pb-32 ">
+        <section className="p-4 space-y-4 max-w-md bg-white pt-16 pb-32 " id="lokasi">
             {/* Row 1: Heading */}
             <h2 className="text-3xl font-bold text-center text-black">
                 Lokasi Kami
@@ -35,11 +35,10 @@ const Location: React.FC = () => {
                 <div className="bg-gradient-to-br from-[#9C6F22] via-[#F4D88D] to-[#9C6F22] p-1  rounded-2xl">
                     <button
                         onClick={() => setActiveMap("newlook")}
-                        className={`px-4 py-2 rounded-xl text-sm font-medium ${
-                            activeMap === "newlook"
+                        className={`px-4 py-2 rounded-xl text-sm font-medium ${activeMap === "newlook"
                                 ? "bg-black text-white"
                                 : "bg-gray-200 text-black"
-                        }`}
+                            }`}
                     >
                         Kemayoran
                     </button>
@@ -47,11 +46,10 @@ const Location: React.FC = () => {
                 <div className="bg-gradient-to-br from-[#9C6F22] via-[#F4D88D] to-[#9C6F22] p-1  rounded-2xl">
                     <button
                         onClick={() => setActiveMap("branch")}
-                        className={`px-4 py-2 rounded-xl text-sm font-medium ${
-                            activeMap === "branch"
+                        className={`px-4 py-2 rounded-xl text-sm font-medium ${activeMap === "branch"
                                 ? "bg-black text-white"
                                 : "bg-gray-200 text-black"
-                        }`}
+                            }`}
                     >
                         Sedayu City
                     </button>
