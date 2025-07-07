@@ -51,29 +51,32 @@ const Service = () => {
     ];
 
     return (
-        <section className="p-4 relative pt-8 overflow-hidden md:px-27 md:mb-16" id="layanan">
+        <section
+            className="p-4 relative overflow-hidden md:px-27 md:py-48 py-16"
+            id="layanan"
+        >
             <img
                 src={decor1}
                 alt="Hero"
-                className="absolute z-0 -top-0.5 -left-5 w-auto h-[132px]"
+                className="absolute z-0 -top-1 -left-10 w-auto h-[132px] md:top-36 md:left-95"
             />
             <img
                 src={decor2}
                 alt="Hero"
-                className="absolute z-0 -top-0.5 -right-5 w-auto h-[132px]"
+                className="absolute z-0 -top-1 -right-10 w-auto h-[132px] md:top-36 md:right-95"
             />
             {/* Heading Row */}
-            <div className="text-center py-8">
-                <h1 className="text-black text-3xl font-bold">Layanan Kami</h1>
+            <div className="text-center pb-8">
+                <h1 className="text-black text-3xl md:text-6xl font-bold">
+                    Layanan Kami
+                </h1>
             </div>
 
             {/* Grid Row */}
             <div className="flex justify-center">
-                <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-8">
                     {services.map((service, index) => (
-                        <div
-                            key={index}
-                        >
+                        <div key={index}>
                             <div className="p-2 md:p-1 bg-gradient-to-br from-[#9C6F22] via-[#F4D88D] to-[#9C6F22] rounded-xl my-4 shadow-md">
                                 <div className="bg-white rounded-xl max-w-[300px] text-left">
                                     {/* Image */}

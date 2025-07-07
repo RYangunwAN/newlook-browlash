@@ -6,10 +6,10 @@ const Testimonial = () => {
     const flickityOptions = {
         cellAlign: "center",
         autoPlay: true,
-        contain: false,
         pageDots: false,
         prevNextButtons: false,
         initialIndex: 1,
+        contain: true,
     };
 
     const reviews = [
@@ -70,61 +70,62 @@ const Testimonial = () => {
     ];
 
     return (
-        <section className=" bg-gradient-to-b from-[#FAE4E9] via-[#FAE4E9] to-[#ffffff] pt-16 pb-16">
-            {/* First Row: Heading */}
-            <div className="text-center mb-6">
-                <h1 className="text-3xl font-bold text-black">Testimonial</h1>
-            </div>
-
-            {/* Second Row: Flickity Carousel */}
-            <div className="mb-6">
-                <Flickity
-                    options={flickityOptions}
-                    className="flex h-90 items-center"
-                >
-                    {reviews.map((review) => (
-                        <div
-                            key={review.id}
-                            className=" py-5 px-4 rounded-xl shadow-lg border border-gray-200 bg-white mx-4 h-80 w-70"
-                        >
-                            {/* Header */}
-                            <div className="flex items-center gap-4 mb-2">
-                                <div
-                                    className={`w-10 h-10 rounded-full ${review.avatarBg} text-white flex items-center justify-center font-bold`}
-                                >
-                                    {review.initial}
-                                </div>
-                                <div>
-                                    <p className="font-semibold text-sm text-gray-800">
-                                        {review.name}
-                                    </p>
-                                    <p className="text-xs text-gray-500">
-                                        {review.date}
-                                    </p>
-                                    <div className="flex mt-1 text-yellow-400">
-                                        {Array.from({
-                                            length: review.rating,
-                                        }).map((_, i) => (
-                                            <span key={i}>★</span>
-                                        ))}
+        <div className="bg-gradient-to-b from-[#FAE4E9] via-[#FAE4E9] to-[#ffffff] py-16">
+            <section className="  pt-16 pb-16">
+                {/* First Row: Heading */}
+                <div className="text-center mb-6">
+                    <h1 className="text-3xl md:text-6xl font-bold text-black">
+                        Testimonial
+                    </h1>
+                </div>
+                {/* Second Row: Flickity Carousel */}
+                <div className="mb-6">
+                    <Flickity
+                        options={flickityOptions}
+                        className="flex h-90 items-center"
+                    >
+                        {reviews.map((review) => (
+                            <div
+                                key={review.id}
+                                className=" py-5 px-4 rounded-xl shadow-lg border border-gray-200 bg-white mx-4 h-80 w-70"
+                            >
+                                {/* Header */}
+                                <div className="flex items-center gap-4 mb-2">
+                                    <div
+                                        className={`w-10 h-10 rounded-full ${review.avatarBg} text-white flex items-center justify-center font-bold`}
+                                    >
+                                        {review.initial}
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold text-sm text-gray-800">
+                                            {review.name}
+                                        </p>
+                                        <p className="text-xs text-gray-500">
+                                            {review.date}
+                                        </p>
+                                        <div className="flex mt-1 text-yellow-400">
+                                            {Array.from({
+                                                length: review.rating,
+                                            }).map((_, i) => (
+                                                <span key={i}>★</span>
+                                            ))}
+                                        </div>
                                     </div>
                                 </div>
+                                {/* Review Text */}
+                                <p className="text-sm text-gray-700 mt-3">
+                                    {review.review}
+                                </p>
+                                {/* View on Google */}
+                                <div className="mt-4 flex items-center gap-2 text-sm text-gray-600 hover:underline cursor-pointer">
+                                    <span>Review from Google</span>
+                                </div>
                             </div>
-
-                            {/* Review Text */}
-                            <p className="text-sm text-gray-700 mt-3">
-                                {review.review}
-                            </p>
-
-                            {/* View on Google */}
-                            <div className="mt-4 flex items-center gap-2 text-sm text-gray-600 hover:underline cursor-pointer">
-                                <span>Review from Google</span>
-                            </div>
-                        </div>
-                    ))}
-                </Flickity>
-            </div>
-        </section>
+                        ))}
+                    </Flickity>
+                </div>
+            </section>
+        </div>
     );
 };
 

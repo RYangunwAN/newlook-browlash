@@ -21,74 +21,83 @@ const About: React.FC = () => {
     };
 
     return (
-        <section className="py-8 flex flex-col md:flex-row items-center justify-center bg-[#FAE4E9] pb-20 overflow-hidden md:px-27 md:justify-between md:gap-12">
-            {/* Row 1: Spacer or could be a background/empty row */}
-            <div className="mb-4 w-full relative">
-                <img
-                    src={shine}
-                    alt="shine"
-                    className="absolute z-0 -top-15 left-1/2 -translate-x-1/2 w-auto h-[420px] md:hidden"
-                />
-                <Flickity
-                    className="carousel w-full md:hidden"
-                    options={flickityOptions}
-                    reloadOnUpdate
-                >
-                    <div className="carousel-cell">
-                        <img src={about1} alt="1" />
-                    </div>
-                    <div className="carousel-cell">
-                        <img src={about2} alt="2" />
-                    </div>
-                    <div className="carousel-cell">
-                        <img src={about4} alt="4" />
-                    </div>
-                    <div className="carousel-cell">
-                        <img src={about3} alt="3" />
-                    </div>
-                </Flickity>
-                <div className="hidden md:flex h-90 gap-4">
-                    {/* Column 1: One full-height image */}
-                    <div className="h-full w-auto">
-                        <img src={about2} alt="1" className="h-full w-auto object-cover" />
-                    </div>
-
-                    {/* Column 2: Two half-height stacked images */}
-                    <div className="flex flex-col gap-4">
-                        <div className="flex-1/2">
-                            <img src={about1} alt="2" className="h-42" />
+        <div className="bg-[#FAE4E9] ">
+            <section className="py-8 flex flex-col md:flex-row items-center justify-center pb-20 overflow-hidden md:px-27 md:justify-between">
+                {/* Row 1: Spacer or could be a background/empty row */}
+                <div className="mb-4 relative w-full">
+                    <img
+                        src={shine}
+                        alt="shine"
+                        className="absolute z-0 -top-15 left-1/2 -translate-x-1/2 w-auto h-[420px] md:hidden"
+                    />
+                    <Flickity
+                        className="carousel w-full md:hidden"
+                        options={flickityOptions}
+                        reloadOnUpdate
+                    >
+                        <div className="carousel-cell">
+                            <img src={about1} alt="1" />
                         </div>
-                        <div className="flex-1/2">
-                            <img src={about3} alt="4" className="h-42" />
+                        <div className="carousel-cell">
+                            <img src={about2} alt="2" />
+                        </div>
+                        <div className="carousel-cell">
+                            <img src={about4} alt="4" />
+                        </div>
+                        <div className="carousel-cell">
+                            <img src={about3} alt="3" />
+                        </div>
+                    </Flickity>
+                    <div className="hidden md:flex h-90 gap-4">
+                        {/* Column 1: One full-height image */}
+                        <div className="h-full bg-gradient-to-br from-[#9C6F22] via-[#F4D88D] to-[#9C6F22] rounded-xl p-1 shadow-md">
+                            <img
+                                src={about2}
+                                alt="1"
+                                className="h-full w-auto object-cover"
+                            />
+                        </div>
+                        {/* Column 2: Two half-height stacked images */}
+                        <div className="flex flex-col gap-4">
+                            <div className="flex-1/2 bg-gradient-to-br from-[#9C6F22] via-[#F4D88D] to-[#9C6F22] rounded-xl p-1 shadow-md">
+                                <img src={about1} alt="2" className="h-41" />
+                            </div>
+                            <div className="flex-1/2 bg-gradient-to-br from-[#9C6F22] via-[#F4D88D] to-[#9C6F22] rounded-xl p-1 shadow-md">
+                                <img src={about3} alt="4" className="h-41" />
+                            </div>
                         </div>
                     </div>
                 </div>
-
-            </div>
-            {/* Row 2: Contains 3 rows */}
-            <div className="w-full max-w-xs md:max-w-xl flex flex-col items-center md:items-baseline gap-4 ">
-                <h2 className="hidden md:flex text-4xl font-bold text-black items-center gap-2">
-                    Tampil lebih percaya diri
-                </h2>
-                <h2 className="hidden md:flex text-4xl font-bold text-black items-center gap-2">
-                    dengan <img src={newlook} alt="NewLook" className="h-12 w-auto inline-block" />
-                </h2>
-
-
-                {/* Row 2.1: h2 tag */}
-                <h2 className="text-4xl font-bold text-black md:hidden">
-                    Tampil percaya diri dengan
-                </h2>
-                {/* Row 2.2: Image */}
-                <img src={newlook} alt="About" className="w-60 rounded-lg md:hidden" />
-                {/* Row 2.3: p tag */}
-                <p className="text- md:text-lg text-gray-600 text-center md:text-left">
-                    Dan kami di sini untuk mendukung itu
-                    <br />
-                    setiap hari.
-                </p>
-            </div>
-        </section>
+                {/* Row 2: Contains 3 rows */}
+                <div className="w-full max-w-xs md:max-w-2xl flex flex-col items-center md:items-baseline gap-4">
+                    <h2 className="hidden md:flex text-6xl font-bold text-black items-center">
+                        Tampil lebih percaya diri
+                    </h2>
+                    <h2 className="hidden md:flex text-6xl font-bold text-black items-center gap-2">
+                        dengan{" "}
+                        <img
+                            src={newlook}
+                            alt="NewLook"
+                            className="h-15 w-auto inline-block"
+                        />
+                    </h2>
+                    {/* Row 2.1: h2 tag */}
+                    <h2 className="text-4xl font-bold text-center text-black md:hidden">
+                        Tampil percaya diri dengan
+                    </h2>
+                    {/* Row 2.2: Image */}
+                    <img
+                        src={newlook}
+                        alt="About"
+                        className="w-60 rounded-lg md:hidden"
+                    />
+                    {/* Row 2.3: p tag */}
+                    <p className="text-base md:text-lg text-gray-600 text-center md:text-left">
+                        Dan kami di sini untuk mendukung itu setiap hari.
+                    </p>
+                </div>
+            </section>
+        </div>
     );
 };
 

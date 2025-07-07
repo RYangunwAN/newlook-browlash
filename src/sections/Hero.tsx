@@ -12,7 +12,10 @@ import "../style/about.css";
 const Hero: React.FC = () => {
     return (
         <div className="bg-gradient-to-b from-[#ffffff] to-[#FAE4E9] pb-20 overflow-hidden relative ">
-            <section className="relative p-4 overflow-hidden  md:h-130" id="home">
+            <section
+                className="relative p-4 overflow-hidden md:overflow-visible md:h-130"
+                id="home"
+            >
                 {/* Decorative Images */}
                 <img
                     src={decorleft}
@@ -37,14 +40,13 @@ const Hero: React.FC = () => {
                 <img
                     src={decordesktopleft}
                     alt="Hero"
-                    className="hidden md:block absolute z-0 left-0 -top-10 h-[400px] w-auto"
+                    className="hidden md:block absolute z-0 -left-50 -top-15 h-[400px] w-auto"
                 />
                 <img
                     src={decordesktopright}
                     alt="Hero"
-                    className="hidden md:block absolute z-0 right-0 top-12 w-auto"
+                    className="hidden md:block absolute z-0 -right-50 top-25 w-auto"
                 />
-
                 {/* Content */}
                 <div className="relative z-10 flex flex-col justify-center md:justify-between items-center md:flex-row-reverse md:mx-25">
                     {/* Row 1: Image */}
