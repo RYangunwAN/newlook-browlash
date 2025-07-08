@@ -24,7 +24,7 @@ const About: React.FC = () => {
         <div className="bg-[#FAE4E9] ">
             <section className="py-8 flex flex-col lg:flex-row items-center justify-center pb-20 overflow-hidden lg:px-27 lg:justify-between lg:gap-8">
                 {/* Row 1: Spacer or could be a background/empty row */}
-                <div className="mb-4 relative w-2/5 md:w-full">
+                <div className="mb-4 relative w-full lg:w-2/5 md:w-full">
                     <img
                         src={shine}
                         alt="shine"

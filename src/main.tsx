@@ -10,6 +10,7 @@ import Testimonial from "./sections/Testimonial.tsx";
 import Location from "./sections/Location.tsx";
 import Footer from "./sections/Footer.tsx";
 import CTA from "./sections/CTA.tsx";
+// import FloatingCTA from "./components/FloatingCTA.tsx";
 
 createRoot(document.getElementById("root")!).render(
     <StrictMode>
@@ -22,5 +23,6 @@ createRoot(document.getElementById("root")!).render(
         <Location />
         <CTA />
         <Footer />
+        {/* <FloatingCTA /> */}
     </StrictMode>
 );
