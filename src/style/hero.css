@@ -1,9 +1,9 @@
 /* GLOBAL anchor styling */
-a:link,
-a:visited,
-a:hover,
-a:active {
-    color: white !important;
+.booking-btn a:link,
+.booking-btn a:visited,
+.booking-btn a:hover,
+.booking-btn a:active {
+    color: white;
     text-decoration: none;
 }
 

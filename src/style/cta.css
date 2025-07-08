@@ -1,0 +1,18 @@
+.cta-booking-btn {
+    background-color: white;
+    color: black; /* 👈 Add this line */
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.cta-booking-btn a:link,
+.cta-booking-btn a:visited,
+.cta-booking-btn a:hover,
+.cta-booking-btn a:active {
+    color: white !important;
+    text-decoration: none;
+}

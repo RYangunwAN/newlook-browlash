@@ -1,8 +1,16 @@
 import React from "react";
 import decordesktopleft from "../assets/imgs/porto_decor_desktop_left.png";
 import decordesktopright from "../assets/imgs/porto_decor_desktop_right.png";
+import "../style/cta.css";
 
 const CTA: React.FC = () => {
+    const phoneNumber = "6281398522058";
+    const message =
+        "Halo! Saya ingin melakukan booking. Mohon info lebih lanjut ya. Terima kasih!";
+    const waLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+        message
+    )}`;
+
     return (
         <div className="bg-[#1D1D1D] relative">
             <img
@@ -29,15 +37,15 @@ const CTA: React.FC = () => {
                     terbaik dari NewLook Browlash.
                 </p>
                 {/* WhatsApp Button */}
-                <div className="inline-block p-[4px] rounded-full bg-gradient-to-br from-[#9C6F22] via-[#F4D88D] to-[#9C6F22]">
-                    <button
-                        onClick={() =>
-                            window.open("https://wa.me/6281234567890", "_blank")
-                        }
-                        className="block w-full px-6 py-3 rounded-full font-medium text-black bg-white hover:bg-white transition focus:outline-none"
+                <div className="flex w-fit mx-auto bg-gradient-to-br from-[#9C6F22] via-[#F4D88D] to-[#9C6F22] rounded-full p-1">
+                    <a
+                        href={waLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="cta-booking-btn text-black w-60"
                     >
-                        Book via Whatsapp
-                    </button>
+                        Booking Sekarang
+                    </a>
                 </div>
             </section>
         </div>
