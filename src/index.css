@@ -24,6 +24,11 @@ section {
     margin: 0 auto; /* centers the section */
 }
 
+header {
+    max-width: 1440px;
+    margin: 0 auto; /* centers the section */
+}
+
 a {
     font-weight: 500;
     color: #646cff;
