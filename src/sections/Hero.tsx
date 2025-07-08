@@ -11,7 +11,7 @@ import "../style/about.css";
 
 const Hero: React.FC = () => {
     return (
-        <div className="bg-gradient-to-b from-[#ffffff] to-[#FAE4E9] pb-20 overflow-hidden relative ">
+        <div className="bg-gradient-to-b from-[#ffffff] to-[#FAE4E9] pb-20 overflow-hidden relative pt-8">
             <section
                 className="relative p-4 overflow-hidden lg:overflow-visible lg:h-130"
                 id="home"
@@ -72,10 +72,13 @@ const Hero: React.FC = () => {
                             Lebih Anggun
                         </h1>
                         {/* Row 3: Subheading */}
-                        <p className="text-base lg:text-lg text-gray-600 mb-5">
+                        <p className="hidden lg:block text-base lg:text-lg text-gray-600 mb-5">
                             Kami menghadirkan solusi kecantikan yang membuat
                             <br />
                             Anda tampil lebih percaya diri setiap hari.
+                        </p>
+                        <p className="lg:hidden text-base lg:text-lg text-gray-600 mb-5">
+                            Kami menghadirkan solusi kecantikan yang membuat anda tampil lebih percaya diri setiap hari.
                         </p>
                         {/* Row 4: Call-to-Action Button */}
 

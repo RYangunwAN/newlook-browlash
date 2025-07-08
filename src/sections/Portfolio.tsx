@@ -140,7 +140,7 @@ const Portfolio = () => {
                             </p>
                         </div>
                         {/* Fourth Row: Social Media Icons */}
-                        <div className="flex justify-center space-x-4 lg:items-start lg:justify-start lg:px-4">
+                        <div className="flex justify-center space-x-4 lg:items-start lg:justify-start lg:px-4  z-5">
                             <a
                                 href="https://www.instagram.com/newlook_browlash/"
                                 target="_blank"
