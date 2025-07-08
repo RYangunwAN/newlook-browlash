@@ -1,4 +1,3 @@
-import React from "react";
 import sulamalis from "../assets/imgs/sulam_alis.png";
 import decor1 from "../assets/imgs/service_decor_left.png";
 import decor2 from "../assets/imgs/service_decor_right.png";

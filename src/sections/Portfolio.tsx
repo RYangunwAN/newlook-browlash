@@ -1,4 +1,3 @@
-import React from "react";
 import Flickity from "react-flickity-component";
 import "flickity/css/flickity.css";
 import sulamalisporto1 from "../assets/imgs/sulam_alis_1.png";
