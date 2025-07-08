@@ -10,39 +10,38 @@ const Location: React.FC = () => {
     };
 
     const locationDetails: Record<string, { title: string; address: string }> =
-        {
-            newlook: {
-                title: "Kemayoran",
-                address:
-                    "Jl. Sumur Batu Raya No.20, RT.3/RW.1, Sumur Batu, Kec. Kemayoran, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10640",
-            },
-            branch: {
-                title: "Sedayu City",
-                address:
-                    "Ruko sedayu city boulevard selatan blok C no 18, Daerah Khusus Ibukota Jakarta 13920",
-            },
-        };
+    {
+        newlook: {
+            title: "Kemayoran",
+            address:
+                "Jl. Sumur Batu Raya No.20, RT.3/RW.1, Sumur Batu, Kec. Kemayoran, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10640",
+        },
+        branch: {
+            title: "Sedayu City",
+            address:
+                "Ruko sedayu city boulevard selatan blok C no 18, Daerah Khusus Ibukota Jakarta 13920",
+        },
+    };
 
     return (
         <section
-            className="p-4 space-y-4 max-w-md bg-white pt-16 pb-32 "
+            className="p-4 space-y-4 max-w-md bg-white pt-16 pb-32 lg:px-27"
             id="lokasi"
         >
             {/* Row 1: Heading */}
-            <h2 className="text-3xl md:text-6xl font-bold text-center text-black md:mb-8">
+            <h2 className="text-3xl lg:text-5xl xl:6xl font-bold text-center text-black lg:mb-8">
                 Lokasi Kami
             </h2>
 
             {/* Row 2: Buttons */}
-            <div className="flex justify-center gap-4 md:justify-start">
+            <div className="flex justify-center gap-4 lg:justify-start">
                 <div className="bg-gradient-to-br from-[#9C6F22] via-[#F4D88D] to-[#9C6F22] p-1  rounded-2xl">
                     <button
                         onClick={() => setActiveMap("newlook")}
-                        className={`px-4 py-2 rounded-xl text-sm font-medium ${
-                            activeMap === "newlook"
-                                ? "bg-black text-white"
-                                : "bg-gray-200 text-black"
-                        }`}
+                        className={`px-4 py-2 rounded-xl text-sm font-medium ${activeMap === "newlook"
+                            ? "bg-black text-white"
+                            : "bg-gray-200 text-black"
+                            }`}
                     >
                         Kemayoran
                     </button>
@@ -50,11 +49,10 @@ const Location: React.FC = () => {
                 <div className="bg-gradient-to-br from-[#9C6F22] via-[#F4D88D] to-[#9C6F22] p-1  rounded-2xl">
                     <button
                         onClick={() => setActiveMap("branch")}
-                        className={`px-4 py-2 rounded-xl text-sm font-medium ${
-                            activeMap === "branch"
-                                ? "bg-black text-white"
-                                : "bg-gray-200 text-black"
-                        }`}
+                        className={`px-4 py-2 rounded-xl text-sm font-medium ${activeMap === "branch"
+                            ? "bg-black text-white"
+                            : "bg-gray-200 text-black"
+                            }`}
                     >
                         Sedayu City
                     </button>
@@ -62,8 +60,8 @@ const Location: React.FC = () => {
             </div>
 
             {/* Row 3: Google Map Embed */}
-            <div className="md:flex md:flex-row md:gap-4 space-y-4">
-                <div className="md:w-1/2 h-64 overflow-hidden rounded-xl shadow bg-gradient-to-br from-[#9C6F22] via-[#F4D88D] to-[#9C6F22] p-1">
+            <div className="lg:flex lg:flex-row lg:gap-4 space-y-4">
+                <div className="lg:w-1/2 h-64 overflow-hidden rounded-xl shadow bg-gradient-to-br from-[#9C6F22] via-[#F4D88D] to-[#9C6F22] p-1">
                     <iframe
                         title="Map Location"
                         src={mapSrcs[activeMap]}
@@ -74,11 +72,11 @@ const Location: React.FC = () => {
                 </div>
 
                 {/* Text Column */}
-                <div className="md:w-1/2 flex flex-col justify-center px-2 space-y-2">
-                    <h2 className="text-2xl md:text-6xl font-bold text-black md:mb-2">
+                <div className="lg:w-1/2 flex flex-col justify-center px-2 space-y-2">
+                    <h2 className="text-2xl lg:text-5xl xl:6xl font-bold text-black lg:mb-2">
                         {locationDetails[activeMap].title}
                     </h2>
-                    <p className="text-base text-gray-600 md:mb-8">
+                    <p className="text-base text-gray-600 lg:mb-8">
                         {locationDetails[activeMap].address}
                     </p>
                     <div className="text-base text-black font-bold leading-relaxed">

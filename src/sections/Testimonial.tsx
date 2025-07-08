@@ -74,7 +74,7 @@ const Testimonial = () => {
             <section className="  pt-16 pb-16">
                 {/* First Row: Heading */}
                 <div className="text-center mb-6">
-                    <h1 className="text-3xl md:text-6xl font-bold text-black">
+                    <h1 className="text-3xl lg:text-5xl xl:6xl font-bold text-black">
                         Testimonial
                     </h1>
                 </div>

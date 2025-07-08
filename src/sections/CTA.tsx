@@ -8,23 +8,23 @@ const CTA: React.FC = () => {
             <img
                 src={decordesktopleft}
                 alt="Hero"
-                className="hidden md:block absolute z-0 -left-25  bottom-0 w-auto h-[379px]"
+                className="hidden lg:block absolute z-0 -left-25  bottom-0 w-auto h-[379px]"
             />
             <img
                 src={decordesktopright}
                 alt="Hero"
-                className="hidden md:block  absolute z-0 bottom-0 -right-0 w-auto h-[379px]"
+                className="hidden lg:block  absolute z-0 bottom-0 -right-0 w-auto h-[379px]"
             />
             <section
-                className=" text-white text-center px-6 py-12 space-y-6 max-w-md mx-auto md:py-32"
+                className=" text-white text-center px-6 py-12 space-y-6 max-w-md mx-auto lg:py-32"
                 id="hubungi"
             >
                 {/* Heading */}
-                <h2 className="text-3xl md:text-6xl leading-snug">
-                    Siap tampil lebih <br className="md:hidden" /> percaya diri?
+                <h2 className="text-3xl lg:text-5xl xl:6xl leading-snug">
+                    Siap tampil lebih <br className="lg:hidden" /> percaya diri?
                 </h2>
                 {/* Subheading */}
-                <p className="text-sm md:text-xl text-white">
+                <p className="text-sm lg:text-xl text-white">
                     Booking sekarang dan rasakan perawatan <br />
                     terbaik dari NewLook Browlash.
                 </p>

@@ -52,32 +52,32 @@ const Service = () => {
 
     return (
         <section
-            className="p-4 relative overflow-hidden md:px-27 md:py-48 py-16"
+            className="p-4 relative overflow-hidden lg:px-27 lg:py-48 py-16"
             id="layanan"
         >
             <img
                 src={decor1}
                 alt="Hero"
-                className="absolute z-0 -top-1 -left-10 w-auto h-[132px] md:top-36 md:left-95"
+                className="absolute z-0 -top-1 -left-10 w-auto h-[132px] lg:top-36 lg:left-80"
             />
             <img
                 src={decor2}
                 alt="Hero"
-                className="absolute z-0 -top-1 -right-10 w-auto h-[132px] md:top-36 md:right-95"
+                className="absolute z-0 -top-1 -right-10 w-auto h-[132px] lg:top-36 lg:right-80"
             />
             {/* Heading Row */}
             <div className="text-center pb-8">
-                <h1 className="text-black text-3xl md:text-6xl font-bold">
+                <h1 className="text-black text-3xl lg:text-5xl xl:6xl font-bold">
                     Layanan Kami
                 </h1>
             </div>
 
             {/* Grid Row */}
             <div className="flex justify-center">
-                <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-8">
                     {services.map((service, index) => (
                         <div key={index}>
-                            <div className="p-2 md:p-1 bg-gradient-to-br from-[#9C6F22] via-[#F4D88D] to-[#9C6F22] rounded-xl my-4 shadow-md">
+                            <div className="p-2 lg:p-1 bg-gradient-to-br from-[#9C6F22] via-[#F4D88D] to-[#9C6F22] rounded-xl my-4 shadow-md">
                                 <div className="bg-white rounded-xl max-w-[300px] text-left">
                                     {/* Image */}
                                     <img
@@ -94,13 +94,13 @@ const Service = () => {
                                             {service.description}
                                         </p>
                                         {/* Book Button */}
-                                        <button className="md:hidden mt-2 bg-black text-white text-sm font-medium px-4 py-2 rounded-lg border border-transparent hover:border-[#9C6F22] hover:bg-[#1a1a1a] transition">
+                                        <button className="lg:hidden mt-2 bg-black text-white text-sm font-medium px-4 py-2 rounded-lg border border-transparent hover:border-[#9C6F22] hover:bg-[#1a1a1a] transition">
                                             Book
                                         </button>
                                     </div>
                                 </div>
                             </div>
-                            <button className="hidden md:block w-full px-5 py-2 rounded-lg bg-black text-white hover:bg-gradient-to-br from-[#9C6F22] via-[#F4D88D] to-[#9C6F22] hover:text-black transition">
+                            <button className="hidden lg:block w-full px-5 py-2 rounded-lg bg-black text-white hover:bg-gradient-to-br from-[#9C6F22] via-[#F4D88D] to-[#9C6F22] hover:text-black transition">
                                 Book
                             </button>
                         </div>

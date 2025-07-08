@@ -5,9 +5,9 @@ import { FaInstagram, FaWhatsapp, FaTiktok } from "react-icons/fa";
 const Footer: React.FC = () => {
     return (
         <footer className="bg-white text-black pt-10 text-sm max-w-full mx-auto">
-            <section className="md:py-16 pb-12">
+            <section className="lg:py-16 pb-12">
                 {/* Logo */}
-                <div className="px-6 md:flex md:justify-between">
+                <div className="px-6 lg:flex lg:justify-between">
                     <div className="flex justify-center">
                         <img src={logo} alt="Newlook Logo" className="h-30" />
                     </div>
@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
                         </div>
                     </div>
 
-                    <div className="hidden md:block ">
+                    <div className="hidden lg:block ">
                         <div className="flex flex-col items-start gap-3">
                             <h3 className="text-xl font-medium mb-4">
                                 Sections
