@@ -39,13 +39,36 @@ const Navbar = () => {
 
             {/* Mobile nav */}
             {isOpen && (
-                <nav className="flex flex-col gap-4 pb-4 md:hidden text-gray-700 font-medium">
-                    <a href="#about" onClick={closeMenu}>Tentang</a>
-                    <a href="#services" onClick={closeMenu}>Layanan</a>
-                    <a href="#gallery" onClick={closeMenu}>Galeri</a>
-                    <a href="#contact" onClick={closeMenu}>Hubungi</a>
-                </nav>
+                <div
+                    className="fixed inset-0 z-50 flex flex-col items-center justify-center gap-6 bg-gradient-to-b from-[#ffffff] to-[#FAE4E9] text-black text-xl font-semibold md:hidden 
+                   animate-slideIn space-y-8"
+                >
+                    <button
+                        onClick={closeMenu}
+                        className="absolute top-6 right-6 text-6xl text-black h-15 w-15 shadow-md rounded-full bg-white flex items-center justify-center hover:bg-[#1D1D1D] hover:text-white transition duration-200 focus:outline-none"
+                        aria-label="Close menu"
+                    >
+                        X
+                    </button>
+
+                    {["Home", "Layanan", "Portfolio", "Lokasi", "Hubungi"].map((label, index) => (
+                        <button
+                            key={index}
+                            onClick={() => {
+                                const target = document.getElementById(label.toLowerCase());
+                                if (target) {
+                                    target.scrollIntoView({ behavior: "smooth" });
+                                    closeMenu();
+                                }
+                            }}
+                            className="hover:text-[#9C6F22] transition text-black font-light"
+                        >
+                            {label}
+                        </button>
+                    ))}
+                </div>
             )}
+
         </header>
     );
 };

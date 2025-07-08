@@ -22,7 +22,7 @@ const About: React.FC = () => {
 
     return (
         <div className="bg-[#FAE4E9] ">
-            <section className="py-8 flex flex-col lg:flex-row items-center justify-center pb-20 overflow-hidden lg:px-27 lg:justify-between lg:gap-8">
+            <section className="py-8 flex flex-col lg:flex-row items-center justify-center pb-20 overflow-hidden lg:px-27 lg:justify-between lg:space-x-32">
                 {/* Row 1: Spacer or could be a background/empty row */}
                 <div className="mb-4 relative w-full lg:w-2/5 md:w-full">
                     <img
