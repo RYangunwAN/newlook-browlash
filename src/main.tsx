@@ -18,18 +18,14 @@ createRoot(document.getElementById("root")!).render(
         <>
             <Helmet>
                 <title>
-                    Klinik Kecantikan Jakarta | Sulam Alis & Bibir Profesional
+                    Eyelash & Sulam Alis Kelapa Gading | Nailart Natural Jakarta
                 </title>
                 <meta
                     name="description"
-                    content="Tampil cantik alami dengan layanan sulam alis dan bibir dari klinik kecantikan terbaik di Jakarta. Booking sekarang!"
+                    content="Layanan eyelash extension, nailart, dan sulam alis natural terbaik di Kelapa Gading, Jakarta. Klinik kecantikan profesional untuk tampil cantik alami."
                 />
                 <meta name="robots" content="index, follow" />
-                <meta
-                    name="viewport"
-                    content="width=device-width, initial-scale=1.0"
-                />
-                <link rel="canonical" href="https://newlook-browlash.com" />
+                <link rel="canonical" href="https://newlook-browlash.id/" />
             </Helmet>
 
             <Navbar />

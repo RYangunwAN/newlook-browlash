@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../assets/imgs/NewLook_Gold_Logo.png"; // Replace with your logo path
-import { FaInstagram, FaWhatsapp, FaTiktok } from "react-icons/fa";
+import { FaInstagram, FaTiktok } from "react-icons/fa";
 
 const Footer: React.FC = () => {
     return (
@@ -99,13 +99,16 @@ const Footer: React.FC = () => {
                     <div>
                         <h3 className="text-xl font-medium mb-3">Ikuti Kami</h3>
                         <div className="flex justify-start gap-4">
-                            <a href="#" className="bg-black p-2 rounded-lg">
+                            <a
+                                href="https://www.instagram.com/newlook_browlash/"
+                                className="bg-black p-2 rounded-lg"
+                            >
                                 <FaInstagram className="text-white w-5 h-5" />
                             </a>
-                            <a href="#" className="bg-black p-2 rounded-lg">
-                                <FaWhatsapp className="text-white w-5 h-5" />
-                            </a>
-                            <a href="#" className="bg-black p-2 rounded-lg">
+                            <a
+                                href="https://www.tiktok.com/@newlookbrowlash"
+                                className="bg-black p-2 rounded-lg"
+                            >
                                 <FaTiktok className="text-white w-5 h-5" />
                             </a>
                         </div>

@@ -13,54 +13,58 @@ const Service = () => {
     const services = [
         {
             title: "Sulam Alis",
-            description: "Membentuk alis indah yang natural dan tahan lama.",
+            description:
+                "Layanan sulam alis natural di Kelapa Gading dan Sedayu City, Jakarta. Dapatkan bentuk alis sempurna yang tahan lama dan terlihat alami.",
             image: sulamalis,
             message:
-                "Halo! Saya tertarik dengan layanan *Sulam Alis*. Boleh info lebih lanjut?",
+                "Halo, aku mau reservasi untuk treatment Sulam Alis, available kapan ya?",
         },
         {
             title: "Sulam Bibir",
-            description: "Memberikan warna bibir cantik yang segar dan alami.",
+            description:
+                "Sulam bibir profesional di Jakarta, tersedia di cabang Kelapa Gading dan Sedayu City. Hasil warna bibir cantik, segar, dan natural setiap hari.",
             image: sulambibir,
             message:
-                "Halo! Saya ingin booking untuk layanan *Sulam Bibir*. Mohon informasinya, ya!",
+                "Halo, aku mau reservasi untuk treatment Sulam Bibiir, available kapan ya?",
         },
         {
             title: "Nails",
-            description: "Percantik kuku dengan desain unik dan elegan.",
+            description:
+                "Jasa nailart di Kelapa Gading dan Sedayu City dengan desain kuku unik, elegan, dan kekinian untuk semua gaya.",
             image: nails,
             message:
-                "Halo! Saya tertarik dengan layanan *Nail Art*. Bisa info jadwal & harganya?",
+                "Halo, aku mau reservasi untuk treatment Nails, available kapan ya?",
         },
         {
             title: "Eyelash Extension",
-            description: "Bulu mata lentik untuk tampilan memukau setiap hari.",
+            description:
+                "Eyelash extension di Kelapa Gading dan Sedayu City Jakarta dengan hasil lentik natural dan tahan lama. Bikin mata makin menawan tiap hari.",
             image: eyelashext,
             message:
-                "Halo! Saya mau tanya tentang layanan *Eyelash Extension*. Kapan jadwal available?",
+                "Halo, aku mau reservasi untuk treatment Eyelash Extension, available kapan ya?",
         },
         {
             title: "Lash Lift",
-            description: "Angkat bulu mata untuk efek natural dan menawan.",
+            description:
+                "Lash lift natural untuk efek bulu mata terangkat indah tanpa ekstensi. Tersedia di Kelapa Gading dan Sedayu City, Jakarta.",
             image: lashlift,
             message:
-                "Halo! Saya ingin booking layanan *Lash Lift*. Mohon info selengkapnya ya!",
+                "Halo, aku mau reservasi untuk treatment Lash Lift, available kapan ya?",
         },
         {
             title: "Spa",
             description:
-                "Relaksasi tubuh dan pikiran dengan perawatan spa terbaik.",
+                "Relaksasi maksimal dengan layanan spa terbaik di Jakarta. Tersedia di lokasi Kelapa Gading dan Sedayu City.",
             image: spa,
             message:
-                "Halo! Saya ingin reservasi layanan *Spa*. Bisa dikirim detailnya?",
+                "Halo, aku mau reservasi untuk treatment Spa, available kapan ya?",
         },
         {
             title: "Academy",
             description:
-                "Pelatihan profesional untuk kecantikan dan perawatan.",
+                "Kursus sulam alis, eyelash, dan nailart di Jakarta. Pelatihan profesional tersedia di cabang Kelapa Gading dan Sedayu City.",
             image: academy,
-            message:
-                "Halo! Saya tertarik ikut kelas di *Academy*. Bisa info lebih lanjut?",
+            message: "Halo, bisa minta pricelist untuk kursus?",
         },
     ];
 
@@ -103,7 +107,7 @@ const Service = () => {
                                     className="block group"
                                 >
                                     <div className="p-2 lg:p-1 bg-gradient-to-br from-[#9C6F22] via-[#F4D88D] to-[#9C6F22] rounded-xl my-4 shadow-xl group-hover:scale-[1.02] transition-all duration-300">
-                                        <div className="bg-white rounded-xl max-w-[300px] text-left overflow-hidden">
+                                        <div className="bg-white rounded-xl max-w-[300px] text-left overflow-hidden h-85">
                                             {/* Image Container */}
                                             <div className="relative overflow-hidden">
                                                 <img
@@ -127,16 +131,6 @@ const Service = () => {
                                                 <p className="text-sm text-gray-700">
                                                     {service.description}
                                                 </p>
-
-                                                {/* Mobile-only Book Button */}
-                                                <a
-                                                    href={waLink}
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
-                                                    className="lg:hidden mt-6 bg-black text-white text-sm font-medium px-2 py-2 rounded-lg border border-transparent hover:border-[#9C6F22] hover:bg-[#1a1a1a] transition block text-center"
-                                                >
-                                                    Book
-                                                </a>
                                             </div>
                                         </div>
                                     </div>
